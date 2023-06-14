@@ -3,7 +3,7 @@
 
 :root {
   /* color */
-  --white: #ffffff;
+  --white: #f2f3f4;
   --black: #121721;
   --blue: #4f91fe;
   --gray: #2a2e37;
@@ -14,6 +14,13 @@
   --title-size: 2.5rem;
   --text-size: 2rem;
   --small-text-size: 1.75rem;
+
+  /* font-weight */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
 }
 
 *,
@@ -96,6 +103,12 @@ body {
   /* border-bottom: 1px solid var(--white); */
 }
 
+h1[class$="-title"] {
+  font-size: var(--heading-size);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+}
+
 /* home */
 #home {
   height: 100vh;
@@ -105,30 +118,8 @@ body {
   padding-left: 10rem;
 }
 
-.hero-name,
-.hero-desc {
-  line-height: 1.2;
-}
-
 .hero-title {
-  font-size: var(--heading-size);
-}
-
-.hero-name {
-  font-size: var(--heading-size);
-  margin-bottom: 2rem;
-}
-
-.hero-name .name {
-  font-size: 7rem;
-  font-weight: 700;
-  color: var(--blue);
-}
-
-.hero-name .name:hover {
-  color: var(--black);
-  text-shadow: var(--blue) -1px -1px 0px, var(--blue) 1px -1px 0px,
-    var(--blue) -1px 1px 0px, var(--blue) 1px 1px 0px;
+  text-align: left !important;
 }
 
 .hero-title .wave {
@@ -166,9 +157,31 @@ body {
   }
 }
 
+.hero-name,
+.hero-desc {
+  line-height: 1.2;
+}
+
+.hero-name {
+  font-size: var(--heading-size);
+  margin-bottom: 2rem;
+}
+
+.hero-name .name {
+  font-size: 7rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--blue);
+}
+
+.hero-name .name:hover {
+  color: var(--black);
+  text-shadow: var(--blue) -1px -1px 0px, var(--blue) 1px -1px 0px,
+    var(--blue) -1px 1px 0px, var(--blue) 1px 1px 0px;
+}
+
 .hero-desc {
   font-size: var(--subtitle-size);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   font-family: "Raleway", sans-serif;
   text-transform: capitalize;
 }
@@ -179,9 +192,6 @@ body {
   text-align: center;
 }
 .about-me-title {
-  font-size: var(--heading-size);
-  font-weight: 500;
-  text-align: center;
   margin-bottom: 5rem;
 }
 
@@ -231,9 +241,6 @@ body {
 
 /* my projects */
 .projects-title {
-  font-size: var(--heading-size);
-  font-weight: 500;
-  text-align: center;
   margin: 0 10rem 5rem 10rem;
 }
 
@@ -272,7 +279,7 @@ body {
 
 .card-title {
   font-size: var(--title-size);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   margin-bottom: 1rem;
   text-align: center;
   display: inline-block;
@@ -344,8 +351,6 @@ body {
 
 /* contact me */
 .contact-title {
-  font-size: var(--heading-size);
-  font-weight: 500;
   margin-bottom: 5rem;
   margin-left: 5rem;
 }
