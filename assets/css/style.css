@@ -5,7 +5,10 @@
   /* color */
   --white: #f2f3f4;
   --black: #121721;
-  --blue: #4f91fe;
+  --yelllow: #ffc83d;
+  --red: #ff3f2f;
+  --blue: #1e90ff;
+  --purple: #7257fa;
   --gray: #2a2e37;
 
   /* font-size */
@@ -157,11 +160,6 @@ h1[class$="-title"] {
   }
 }
 
-.hero-name,
-.hero-desc {
-  line-height: 1.2;
-}
-
 .hero-name {
   font-size: var(--heading-size);
   margin-bottom: 2rem;
@@ -175,8 +173,8 @@ h1[class$="-title"] {
 
 .hero-name .name:hover {
   color: var(--black);
-  text-shadow: var(--blue) -1px -1px 0px, var(--blue) 1px -1px 0px,
-    var(--blue) -1px 1px 0px, var(--blue) 1px 1px 0px;
+  text-shadow: -1px -1px 0px var(--blue), 1px -1px 0px var(--blue),
+    -1px 1px 0px var(--blue), 1px 1px 0px var(--blue);
 }
 
 .hero-desc {
@@ -191,6 +189,7 @@ h1[class$="-title"] {
 #about-me {
   text-align: center;
 }
+
 .about-me-title {
   margin-bottom: 5rem;
 }
