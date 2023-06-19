@@ -4,7 +4,7 @@
 :root {
   /* color */
   --white: #f2f3f4;
-  --black: #121721;
+  --black: #212329;
   --yelllow: #ffc83d;
   --red: #ff3f2f;
   --blue: #1e90ff;
@@ -350,6 +350,7 @@ h1[class$="-title"] {
 
 /* contact me */
 .contact-title {
+  text-align: left !important;
   margin-bottom: 5rem;
   margin-left: 5rem;
 }
