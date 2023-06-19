@@ -201,7 +201,7 @@ h1[class$="-title"] {
 
 .about-me-img {
   grid-column: 1 / 2;
-  max-width: 300px;
+  width: 325px;
   height: auto;
   border-radius: 5px;
   box-shadow: 0 0 10px #000000;
@@ -506,6 +506,79 @@ button.submit-btn:hover {
   /* contact me */
   .contact-title {
     margin-left: 5rem;
+  }
+  /* end contact me */
+}
+
+/* for mobile */
+@media screen and (width <= 425px) {
+  :root {
+    --heading-size: 3rem;
+    --title-size: 2.5rem;
+    --text-size: 1.1rem;
+  }
+
+  /* navbar */
+  .navbar-name {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+  /* end navbar */
+
+  h1[class$="-title"] {
+    margin-bottom: 2rem;
+  }
+
+  /* home */
+  #home {
+    padding-left: 2.5rem;
+  }
+
+  .hero-name > .name {
+    font-size: 3.5rem;
+  }
+  /* end home */
+
+  /* about me */
+  .about-me-content {
+    padding: 2.5rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    grid-gap: 2.5rem;
+  }
+
+  .about-me-img,
+  .about-me-text {
+    grid-column: span 1;
+  }
+
+  .my-resume-btn {
+    margin-bottom: 2rem;
+  }
+  /* end about me */
+
+  /* my projects */
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* end my projects */
+
+  /* contact me */
+  .contact-title {
+    margin-left: 2.5rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    padding: 0 2.5rem;
   }
   /* end contact me */
 }
