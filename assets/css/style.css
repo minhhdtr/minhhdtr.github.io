@@ -124,6 +124,7 @@ h1[class$="-title"] {
 
 .hero-title {
   text-align: left !important;
+  margin-bottom: 2rem !important;
 }
 
 .hero-title .wave {
