@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
+/* roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+/* lato font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
 :root {
   /* color */
@@ -12,17 +14,14 @@
   --gray: #2a2e37;
 
   /* font-size */
-  --heading-size: 5rem;
-  --subheading-size: 3.5rem;
+  --heading-size: 4.8rem;
   --title-size: 2.5rem;
-  --text-size: 2rem;
-  --small-text-size: 1.75rem;
+  --text-size: 1.75rem;
 
   /* font-weight */
   --font-weight-regular: 400;
-  --font-weight-semibold: 500;
+  --font-weight-medium: 500;
   --font-weight-bold: 700;
-  --font-weight-extrabold: 800;
   --font-weight-black: 900;
 }
 
@@ -43,14 +42,14 @@ body {
   background-color: var(--black);
   color: var(--white);
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: var(--text-size);
 }
 
 /* navbar */
 .navbar {
   background-color: var(--gray);
   width: 100%;
-  height: 10vh;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,8 +63,9 @@ body {
 .navbar-name {
   text-decoration: none;
   color: var(--white);
-  font-family: "Calibre", sans-serif;
-  font-size: 4rem;
+  font-family: "Lato", sans-serif;
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
   line-height: 1.1;
   letter-spacing: 2px;
 }
@@ -108,8 +108,9 @@ body {
 
 h1[class$="-title"] {
   font-size: var(--heading-size);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 /* home */
@@ -162,11 +163,12 @@ h1[class$="-title"] {
 
 .hero-name {
   font-size: var(--heading-size);
+  font-weight: var(--font-weight-medium);
   margin-bottom: 2rem;
 }
 
 .hero-name .name {
-  font-size: 7rem;
+  font-size: 7.2rem;
   font-weight: var(--font-weight-bold);
   color: var(--blue);
 }
@@ -175,13 +177,6 @@ h1[class$="-title"] {
   color: var(--black);
   text-shadow: -1px -1px 0px var(--blue), 1px -1px 0px var(--blue),
     -1px 1px 0px var(--blue), 1px 1px 0px var(--blue);
-}
-
-.hero-desc {
-  font-size: var(--subtitle-size);
-  font-weight: var(--font-weight-medium);
-  font-family: "Raleway", sans-serif;
-  text-transform: capitalize;
 }
 /* end home */
 
@@ -333,9 +328,8 @@ h1[class$="-title"] {
   border: 2px solid var(--white);
   border-radius: 9999px;
   display: inline-block;
-  padding: 0.6rem 1.5rem;
-  margin: 1rem;
-  font-size: var(--small-text-size);
+  padding: 0.6rem 1.2rem;
+  margin: 0.75rem;
   color: var(--white);
   text-align: center;
   text-decoration: none;
@@ -400,10 +394,9 @@ button.submit-btn {
   border: 2px solid var(--white);
   border-radius: 9999px;
   color: var(--white);
+  font-size: var(--text-size);
   cursor: pointer;
-  font-size: var(--small-text-size);
-  margin: 1rem;
-  margin-left: 0;
+  margin-top: 1rem;
   padding: 0.6rem 2rem;
   text-align: center;
   text-decoration: none;
@@ -426,7 +419,6 @@ button.submit-btn:hover {
 }
 
 .contact-links a {
-  font-size: var(--small-text-size);
   line-height: 1.5;
   color: var(--white);
   opacity: 0.55;
@@ -442,7 +434,8 @@ button.submit-btn:hover {
 
 /* footer */
 .footer {
-  height: 10vh;
+  width: 100%;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -450,9 +443,68 @@ button.submit-btn:hover {
 }
 
 .footer-text {
-  font-size: var(--small-text-size);
-  line-height: 1.5;
   letter-spacing: 1px;
   text-align: center;
 }
 /* end footer */
+
+/* media queries */
+
+/* for tablet */
+@media screen and (width <= 768px) {
+  :root {
+    --heading-size: 3.5rem;
+    --title-size: 1.7rem;
+    --text-size: 1.3rem;
+  }
+
+  /* navbar */
+  .navbar-name {
+    font-size: 2.5rem;
+  }
+
+  .navbar-nav-link > * {
+    display: none;
+  }
+  /* end navbar */
+
+  h1[class$="-title"] {
+    margin-bottom: 2.5rem;
+  }
+
+  /* home */
+  #home {
+    padding-left: 5rem;
+  }
+  /* end home */
+
+  /* about me */
+  .about-me-content {
+    padding: 0 5rem;
+  }
+
+  .my-resume-btn {
+    margin-bottom: 2.5rem;
+  }
+  /* end about me */
+
+  /* my projects */
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card:hover {
+    transform: scale(1);
+  }
+
+  .cards:hover .card:not(:hover) {
+    filter: blur(0px);
+  }
+  /* end my projects */
+
+  /* contact me */
+  .contact-title {
+    margin-left: 5rem;
+  }
+  /* end contact me */
+}
