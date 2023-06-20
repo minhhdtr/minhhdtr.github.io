@@ -75,6 +75,59 @@ body {
   letter-spacing: 2px;
 }
 
+.navbar-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar-toggle {
+  display: none;
+}
+
+.navbar-button::before,
+.navbar-button::after {
+  content: "";
+}
+
+.navbar-button::before {
+  transform: translateY(-8px);
+}
+
+.navbar-button::after {
+  transform: translateY(8px);
+}
+
+.navbar-button,
+.navbar-button::before,
+.navbar-button::after {
+  display: block;
+  background-color: var(--white);
+  position: absolute;
+  height: 5.5px;
+  width: 30px;
+  border-radius: 3px;
+  transition: all 0.15s ease-in-out;
+}
+
+#navbar-toggle:checked + .navbar-button-container .navbar-button::before {
+  margin-top: 0px;
+  transform: rotate(45deg);
+}
+
+#navbar-toggle:checked + .navbar-button-container .navbar-button {
+  background-color: transparent;
+}
+
+#navbar-toggle:checked + .navbar-button-container .navbar-button::after {
+  margin-top: 0px;
+  transform: rotate(-45deg);
+}
+
 .navbar-nav {
   display: flex;
 }
@@ -486,6 +539,7 @@ button.submit-btn:hover {
 
   /* about me */
   .about-me-content {
+    grid-gap: 2.5rem;
     padding: 0 5rem;
   }
 
@@ -528,14 +582,60 @@ button.submit-btn:hover {
     font-size: 2rem;
   }
 
-  .navbar {
-    justify-content: center;
+  .navbar-button-container {
+    display: flex;
   }
 
   .navbar-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #navbar-toggle ~ .navbar-nav .navbar-nav-item {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  #navbar-toggle:checked ~ .navbar-nav .navbar-nav-item {
+    border: 1px solid var(--black);
+    height: 5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    width: 100%;
+    background-color: var(--gray);
+    color: var(--white);
+    transition: all 0.15s ease-in-out;
+  }
+
+  .navbar-nav-item > a {
+    color: var(--white);
+  }
+
+  .navbar-nav-item:hover {
+    background-color: var(--black);
+  }
+
+  .navbar-nav-link {
     display: none;
   }
-  /* end navbar */
+
+  #navbar-toggle:checked ~ .navbar-nav .navbar-nav-link {
+    display: block;
+  }
 
   h1[class$="-title"] {
     margin-bottom: 2rem;
