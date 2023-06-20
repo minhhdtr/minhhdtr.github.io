@@ -45,6 +45,11 @@ body {
   font-size: var(--text-size);
 }
 
+::selection {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
 /* navbar */
 .navbar {
   background-color: var(--gray);
