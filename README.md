@@ -1,4 +1,4 @@
-# **Simple Portfolio Website**
+# **Simple Responsize Portfolio Website**
 
 ![Website Screenshot](./assets/image/screenshot.png)
 
