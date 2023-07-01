@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,385 +7,105 @@
 
     <title>duc minhh</title>
 
-    <!-- font awesome cdn -->
+    <!-- fontawesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
-    <!-- favicon -->
-    <link rel="icon" href="./assets/image/favicon.ico" />
-    <!-- css file -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jquery -->
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- js -->
+    <script defer src="./assets/js/script.js"></script>
   </head>
 
   <body>
     <!-- navbar -->
-    <nav class="navbar">
-      <a href="./" class="navbar-name">duc minhh</a>
-
-      <input id="navbar-toggle" type="checkbox" />
-      <label class="navbar-button-container" for="navbar-toggle">
-        <div class="navbar-button"></div>
-      </label>
-      <ul class="navbar-nav">
-        <li class="navbar-nav-item">
-          <a class="navbar-nav-link" href="#home">
-            <ion-icon name="home"></ion-icon>
-            Home
-          </a>
-        </li>
-        <li class="navbar-nav-item">
-          <a class="navbar-nav-link" href="#about-me">
-            <ion-icon name="person"></ion-icon>
-            About Me
-          </a>
-        </li>
-        <li class="navbar-nav-item">
-          <a class="navbar-nav-link" href="#my-projects">
-            <ion-icon name="person"></ion-icon>
-            My Projects
-          </a>
-        </li>
-        <li class="navbar-nav-item">
-          <a class="navbar-nav-link" href="#contact">
-            <ion-icon name="mail"></ion-icon>
-            Contact
-          </a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-md sticky-top" id="navbar">
+      <div class="container-md">
+        <a href="#" class="navbar-brand"> duc minhh </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-supported-content"
+          aria-controls="navbar-supported-content"
+          aria-expanded="false"
+          aria-label="toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar-supported-content">
+          <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0 mt-2 t-lg-0">
+            <li class="nav-item ms-3">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a href="#about-me" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <!-- end navbar -->
+    <main
+      class="main-content"
+      data-bs-spy="scroll"
+      data-bs-target="#navbar"
+      data-bs-smooth-scroll="true"
+      class="scrollspy"
+      tabindex="0"
+    >
+      <!-- home -->
+      <section id="home"></section>
 
-    <!-- main content -->
-    <main class="main-content">
-      <!-- home section -->
-      <section id="home">
-        <div class="hero">
-          <h1 class="hero-title">
-            Hello, World!
-            <span class="wave">👋</span>
-          </h1>
-          <h1 class="hero-name">
-            I am
-            <span class="name">duc minhh</span>
-            ;
-          </h1>
-        </div>
-      </section>
-      <!-- end home section -->
+      <!-- about me -->
+      <section id="about-me"></section>
 
-      <!-- about section -->
-      <section id="about-me">
-        <h1 class="about-me-title">About Me</h1>
-        <div class="about-me-content">
-          <img
-            class="about-me-img"
-            src="./assets/image/duc minhh.jpeg"
-            alt="a photo of duc minhh"
-          />
-          <p class="about-me-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi,
-            veniam id! Deleniti quidem ipsum cumque debitis nesciunt, doloribus
-            dolorum excepturi sequi fugiat? Repellat eos voluptatibus qui animi
-            dolor esse similique!
-            <br /><br />
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-            quia? Dolorem mollitia ipsam molestiae repellat nobis ratione
-            expedita provident voluptatum porro modi! Porro quam eveniet
-            suscipit. Voluptatum, deserunt molestiae! Culpa.
-            <br /><br />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
-            eveniet excepturi ipsam inventore eaque amet minus officiis, tempora
-            in numquam, eum assumenda, odit minima ipsa ad obcaecati molestias
-            labore quas.
-            <br /><br />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
-            eveniet excepturi ipsam inventore eaque amet minus officiis, tempora
-            in numquam, eum assumenda, odit minima ipsa ad obcaecati molestias
-            labore quas.
-          </p>
-        </div>
-        <a href="#" onclick="return false" class="my-resume-btn">My Resume</a>
-      </section>
-      <!-- end about section -->
+      <!-- projects -->
+      <section id="projects"></section>
 
-      <!-- my projects section -->
-      <section id="my-projects">
-        <h1 class="projects-title">These are some of my projects:</h1>
-        <div class="cards">
-          <div class="card">
-            <img
-              src="./assets/image/code.jpg"
-              alt="card image"
-              class="card-img"
-            />
-            <div class="card-content">
-              <h3 class="card-title">
-                <span class="code">< </span>
-                Lorem Ipsum
-                <span class="code"> /></span>
-              </h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                accusantium deleniti mollitia dolor cumque aliquam, atque
-                placeat fuga ipsum. Excepturi?
-              </p>
-              <div class="card-btn-container">
-                <a href="#" onclick="return false" class="card-btn github-btn">
-                  <!-- <i class="fa-brands fa-github"></i> -->
-                  <ion-icon name="logo-github"></ion-icon>
-                  Github
-                </a>
-                <a href="#" onclick="return false" class="card-btn link-btn">
-                  <!-- <i class="fa-regular fa-arrow-up-right-from-square"></i> -->
-                  <ion-icon name="open-outline"></ion-icon>
-                  Preview
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./assets/image/code.jpg"
-              alt="card image"
-              class="card-img"
-            />
-            <div class="card-content">
-              <h3 class="card-title">
-                <span class="code">< </span>
-                Lorem Ipsum
-                <span class="code"> /></span>
-              </h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                accusantium deleniti mollitia dolor cumque aliquam, atque
-                placeat fuga ipsum. Excepturi?
-              </p>
-              <div class="card-btn-container">
-                <a href="#" onclick="return false" class="card-btn github-btn">
-                  <!-- <i class="fa-brands fa-github"></i> -->
-                  <ion-icon name="logo-github"></ion-icon>
-                  Github
-                </a>
-                <a href="#" onclick="return false" class="card-btn link-btn">
-                  <!-- <i class="fa-regular fa-arrow-up-right-from-square"></i> -->
-                  <ion-icon name="open-outline"></ion-icon>
-                  Preview
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./assets/image/code.jpg"
-              alt="card image"
-              class="card-img"
-            />
-            <div class="card-content">
-              <h3 class="card-title">
-                <span class="code">< </span>
-                Lorem Ipsum
-                <span class="code"> /></span>
-              </h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                accusantium deleniti mollitia dolor cumque aliquam, atque
-                placeat fuga ipsum. Excepturi?
-              </p>
-              <div class="card-btn-container">
-                <a href="#" onclick="return false" class="card-btn github-btn">
-                  <!-- <i class="fa-brands fa-github"></i> -->
-                  <ion-icon name="logo-github"></ion-icon>
-                  Github
-                </a>
-                <a href="#" onclick="return false" class="card-btn link-btn">
-                  <!-- <i class="fa-regular fa-arrow-up-right-from-square"></i> -->
-                  <ion-icon name="open-outline"></ion-icon>
-                  Preview
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./assets/image/code.jpg"
-              alt="card image"
-              class="card-img"
-            />
-            <div class="card-content">
-              <h3 class="card-title">
-                <span class="code">< </span>
-                Lorem Ipsum
-                <span class="code"> /></span>
-              </h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                accusantium deleniti mollitia dolor cumque aliquam, atque
-                placeat fuga ipsum. Excepturi?
-              </p>
-              <div class="card-btn-container">
-                <a href="#" onclick="return false" class="card-btn github-btn">
-                  <!-- <i class="fa-brands fa-github"></i> -->
-                  <ion-icon name="logo-github"></ion-icon>
-                  Github
-                </a>
-                <a href="#" onclick="return false" class="card-btn link-btn">
-                  <!-- <i class="fa-regular fa-arrow-up-right-from-square"></i> -->
-                  <ion-icon name="open-outline"></ion-icon>
-                  Preview
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./assets/image/code.jpg"
-              alt="card image"
-              class="card-img"
-            />
-            <div class="card-content">
-              <h3 class="card-title">
-                <span class="code">< </span>
-                Lorem Ipsum
-                <span class="code"> /></span>
-              </h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                accusantium deleniti mollitia dolor cumque aliquam, atque
-                placeat fuga ipsum. Excepturi?
-              </p>
-              <div class="card-btn-container">
-                <a href="#" onclick="return false" class="card-btn github-btn">
-                  <!-- <i class="fa-brands fa-github"></i> -->
-                  <ion-icon name="logo-github"></ion-icon>
-                  Github
-                </a>
-                <a href="#" onclick="return false" class="card-btn link-btn">
-                  <!-- <i class="fa-regular fa-arrow-up-right-from-square"></i> -->
-                  <ion-icon name="open-outline"></ion-icon>
-                  Preview
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./assets/image/code.jpg"
-              alt="card image"
-              class="card-img"
-            />
-            <div class="card-content">
-              <h3 class="card-title">
-                <span class="code">< </span>
-                Lorem Ipsum
-                <span class="code"> /></span>
-              </h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                accusantium deleniti mollitia dolor cumque aliquam, atque
-                placeat fuga ipsum. Excepturi?
-              </p>
-              <div class="card-btn-container">
-                <a href="#" onclick="return false" class="card-btn github-btn">
-                  <!-- <i class="fa-brands fa-github"></i> -->
-                  <ion-icon name="logo-github"></ion-icon>
-                  Github
-                </a>
-                <a href="#" onclick="return false" class="card-btn link-btn">
-                  <!-- <i class="fa-regular fa-arrow-up-right-from-square"></i> -->
-                  <ion-icon name="open-outline"></ion-icon>
-                  Preview
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end projects section -->
-
-      <!-- contact section -->
-      <section id="contact">
-        <h1 class="contact-title">Connect With Me</h1>
-        <div class="contact-container">
-          <form action="POST" class="message-form">
-            <input
-              type="text"
-              class="name"
-              name="name"
-              placeholder="Name"
-              required
-            />
-            <input
-              type="email"
-              class="email"
-              name="email"
-              placeholder="Email"
-            />
-            <textarea
-              class="message"
-              name="message"
-              placeholder="Your Message"
-              cols="25"
-              rows="6"
-              style="font-family: inherit; font-weight: inherit"
-            ></textarea>
-            <button type="button" class="submit-btn">Send Message</button>
-          </form>
-          <div class="contact-info">
-            <p class="contact-text">
-              Feel free to reach out if you have any questions or just want to
-              connect, I will try my best to get back to you!
-            </p>
-            <div class="contact-links">
-              <a href="mailto:ducminhh219@gmail.com" class="email">
-                <ion-icon name="mail"></ion-icon>
-                ducminhh219@gmail.com
-              </a>
-              <a href="https://www.linkedin.com/in/minhhdtr/" class="linkedin">
-                <ion-icon name="logo-linkedin"></ion-icon>
-                minhhdtr
-              </a>
-              <a href="https://github.com/minhhdtr" class="github">
-                <ion-icon name="logo-github"></ion-icon>
-                minhhdtr
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end contact section -->
+      <!-- contact -->
+      <section id="contact"></section>
     </main>
-    <!-- end main content -->
-
-    <!-- footer -->
-    <footer class="footer">
-      <p class="footer-text">
-        made with
-        <i
-          class="fa-solid fa-heart fa-beat-fade"
-          style="
-            color: var(--red);
-            --fa-beat-fade-opacity: 0.75;
-            --fa-beat-fade-scale: 1.25;
-          "
-        ></i>
-        by
-        <a href="./" style="text-decoration: none; color: var(--white)">
-          <span style="color: var(--blue)">duc minhh</span>
-        </a>
-      </p>
-    </footer>
-    <!-- end footer -->
-
-    <!-- ionicons -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
