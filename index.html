@@ -20,7 +20,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -56,8 +60,8 @@
   <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-md sticky-top" id="navbar">
-      <div class="container-md">
-        <a href="#" class="navbar-brand"> duc minhh </a>
+      <div class="container-fluid mx-4">
+        <a href="#" class="navbar-brand duc-minhh"> duc minhh </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -70,7 +74,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="navbar-supported-content">
-          <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0 mt-2 t-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-2 t-lg-0">
             <li class="nav-item ms-3">
               <a href="#home" class="nav-link">Home</a>
             </li>
@@ -96,7 +100,21 @@
       tabindex="0"
     >
       <!-- home -->
-      <section id="home"></section>
+      <section
+        id="home"
+        class="d-flex justify-content-center align-items-center"
+      >
+        <div class="container hero">
+          <h1 class="hero-title display-3">
+            Hi there
+            <span class="wave">👋</span>
+          </h1>
+          <p class="hero-sub display-2 mb-0">
+            I am
+            <span class="hero-sub-highlight duc-minhh">duc minhh</span>
+          </p>
+        </div>
+      </section>
 
       <!-- about me -->
       <section id="about-me"></section>
