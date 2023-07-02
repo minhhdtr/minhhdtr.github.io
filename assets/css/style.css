@@ -22,6 +22,21 @@ html {
 body {
   font-family: "Lato", sans-serif !important;
   background-color: var(--black) !important;
+  color: var(--white) !important;
+}
+
+::selection {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+ul {
+  list-style: none;
 }
 
 .duc-minhh {
@@ -79,10 +94,6 @@ body {
 
 .hero {
   text-align: left;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
 }
 
 .wave {
@@ -131,4 +142,49 @@ body {
   color: var(--black);
   text-shadow: -1px -1px 0px var(--blue), 1px -1px 0px var(--blue),
     -1px 1px 0px var(--blue), 1px 1px 0px var(--blue);
+}
+
+.carousel > .carousel-inner > .carousel-item > img {
+  border-radius: 5px;
+}
+
+#projects,
+#contact {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+
+.form-control {
+  background-color: var(--gray);
+  color: var(--white);
+  border: none;
+}
+
+.form-control:focus,
+.form-control:active {
+  border: 1px solid var(--blue);
+  box-shadow: none;
+}
+
+.btn-submit {
+  border: 1.5px solid var(--white);
+  border-radius: 9999px;
+  padding: 6px 20px;
+  color: var(--white);
+}
+
+.btn-submit:hover {
+  background-color: var(--gray);
+  border: 1.5px solid var(--white);
+}
+
+.footer {
+  background-color: var(--gray);
+  height: 52px;
+}
+
+@media screen and (width < 768px) {
+  .footer {
+    height: 72px;
+  }
 }
