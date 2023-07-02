@@ -63,6 +63,10 @@ body {
     background-color: var(--gray);
   }
 
+  .nav-link:hover {
+    color: var(--white) !important;
+  }
+
   .nav-link.active,
   .nav-link.show {
     color: var(--white) !important;
