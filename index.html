@@ -59,12 +59,15 @@
   </head>
 
   <body>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/en_US/sdk.js"
-    ></script>
+    <!-- back to top button -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg btn-back-to-top"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- navbar -->
     <nav class="navbar navbar-expand-md sticky-top" id="navbar">
       <div class="container-fluid mx-4">
@@ -228,11 +231,116 @@
 
       <!-- projects -->
       <section id="projects">
-        <div class="container mt-4">
-          <h1 class="display-3 text-center mb-5">
-            These are some of my projects
-          </h1>
-          <div class="cards"></div>
+        <div class="container text-center mt-4 mb-5">
+          <h1 class="display-3">These are some of my projects</h1>
+          <p>I will put real projects in here later hehe</p>
+        </div>
+
+        <div class="container-fluid cards">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col card-project px-0">
+              <div class="container-image mb-3">
+                <img
+                  src="./assets/image/language/c++.png"
+                  alt="c++"
+                  width="180"
+                  class="mx-auto d-block"
+                />
+              </div>
+              <div class="card-body text-center mb-3">
+                <h4 class="card-title text-center">
+                  <span class="html-tag">< </span>
+                  C++
+                  <span class="html-tag"> /></span>
+                </h4>
+              </div>
+            </div>
+            <div class="col card-project px-0">
+              <div class="container-image mb-3">
+                <img
+                  src="./assets/image/language/python.png"
+                  alt="python"
+                  width="180"
+                  class="mx-auto d-block"
+                />
+              </div>
+              <div class="card-body text-center mb-3">
+                <h4 class="card-title text-center">
+                  <span class="html-tag">< </span>
+                  Python
+                  <span class="html-tag"> /></span>
+                </h4>
+              </div>
+            </div>
+            <div class="col card-project px-0">
+              <div class="container-image mb-3">
+                <img
+                  src="./assets/image/language/java.png"
+                  alt="java"
+                  width="180"
+                  class="mx-auto d-block"
+                />
+              </div>
+              <div class="card-body text-center mb-3">
+                <h4 class="card-title text-center">
+                  <span class="html-tag">< </span>
+                  Java
+                  <span class="html-tag"> /></span>
+                </h4>
+              </div>
+            </div>
+            <div class="col card-project px-0">
+              <div class="container-image mb-3">
+                <img
+                  src="./assets/image/language/html.png"
+                  alt="html"
+                  width="180"
+                  class="mx-auto d-block"
+                />
+              </div>
+              <div class="card-body text-center mb-3">
+                <h4 class="card-title text-center">
+                  <span class="html-tag">< </span>
+                  HTML
+                  <span class="html-tag"> /></span>
+                </h4>
+              </div>
+            </div>
+            <div class="col card-project px-0">
+              <div class="container-image mb-3">
+                <img
+                  src="./assets/image/language/css.png"
+                  alt="css"
+                  width="180"
+                  class="mx-auto d-block"
+                />
+              </div>
+              <div class="card-body text-center mb-3">
+                <h4 class="card-title text-center">
+                  <span class="html-tag">< </span>
+                  CSS
+                  <span class="html-tag"> /></span>
+                </h4>
+              </div>
+            </div>
+            <div class="col card-project px-0">
+              <div class="container-image mb-3">
+                <img
+                  src="./assets/image/language/javacript.png"
+                  alt="javacript"
+                  width="180"
+                  class="mx-auto d-block"
+                />
+              </div>
+              <div class="card-body text-center mb-3">
+                <h4 class="card-title text-center">
+                  <span class="html-tag">< </span>
+                  Javacript
+                  <span class="html-tag"> /></span>
+                </h4>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -280,22 +388,34 @@
                   to connect, I will try my best to get back to you!
                 </p>
                 <ul class="contact-detail ps-0">
-                  <li class="contact-link mb-3">
-                    <a href="mailto:ducminhh219@gmail.com">
-                      <i class="fa-solid fa-envelope"></i>
+                  <li class="contact-item mb-3">
+                    <a
+                      href="mailto:ducminhh219@gmail.com"
+                      class="contact-link"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-envelope me-1"></i>
                       ducminhh219@gmail.com</a
                     >
                   </li>
-                  <li class="contact-link mb-3">
-                    <a href="tel:033 999 9999">
-                      <i class="fa-solid fa-phone"></i>
-                      033 999 9999</a
+                  <li class="contact-item mb-3">
+                    <a
+                      href="https://www.linkedin.com/in/minhhdtr"
+                      class="contact-link"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-linkedin me-1"></i>
+                      minhhdtr</a
                     >
                   </li>
-                  <li class="contact-link mb-3">
-                    <a href="https://www.facebook.com/ducminhh219/">
-                      <i class="fa-brands fa-facebook"></i>
-                      ducminhh219</a
+                  <li class="contact-item mb-3">
+                    <a
+                      href="https://github.com/minhhdtr"
+                      class="contact-link"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-github me-1"></i>
+                      minhhdtr</a
                     >
                   </li>
                 </ul>
@@ -310,7 +430,7 @@
     <footer class="footer border-top d-flex align-items-center">
       <div class="container">
         <div class="row d-flex">
-          <div class="col-lg-6 text-center">
+          <div class="text-center">
             © All rights reserved. Made with
             <i class="fa-solid fa-heart" style="color: var(--red)"></i>
             by
@@ -318,10 +438,10 @@
               duc minhh
             </a>
           </div>
-          <div
+          <!-- <div
             class="col-lg-6 d-flex justify-content-lg-end justify-content-center"
           >
-            <ul class="list-inline mb-0">
+            <ul class="list-inline mb-0 gap-5">
               <li class="list-inline-item">
                 <a
                   href="https://www.facebook.com/minhhdtr"
@@ -350,7 +470,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>
